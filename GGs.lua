@@ -1,4 +1,4 @@
-local allowedUsername = "mynameischiky"
+local allowedUsername = "mynameischiky3"
 local localPlayer = game.Players.LocalPlayer
 
 if localPlayer.Name ~= allowedUsername then
