@@ -1,15 +1,4 @@
--- Replace this with your actual Discord Webhook URL
-local webhookURL = "https://discord.com/api/webhooks/1362842705893527702/0m7_W76lWkKX1DWDW3ynHvoqml_W_fiOhPyfee45Pj0tWYghWcR0u4LfQaV8g0tvxGjE"
-
-local function sendWebhook(playerName)
-    local data = {
-        ["content"] = "Player Executed the Script: " .. playerName
-    }
-    local jsonData = game:GetService("HttpService"):JSONEncode(data)
-    game:GetService("HttpService"):PostAsync(webhookURL, jsonData)
-end
-
-local allowedUsername = "mynameischiky"
+local allowedUsername = "mynameischiky3"
 local localPlayer = game.Players.LocalPlayer
 
 if localPlayer.Name ~= allowedUsername then
